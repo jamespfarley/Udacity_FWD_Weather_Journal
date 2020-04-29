@@ -1,0 +1,27 @@
+{
+  "name": "fwd_proj3_weather_journal",
+  "version": "1.0.0",
+  "description": "Weather Journal Project",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "cors-anywhere": "^0.4.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SemajYelraf/Udacity_FWD_Weather_Journal.git"
+  },
+  "author": "James P Farley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SemajYelraf/Udacity_FWD_Weather_Journal/issues"
+  },
+  "homepage": "https://github.com/SemajYelraf/Udacity_FWD_Weather_Journal#readme"
+}
