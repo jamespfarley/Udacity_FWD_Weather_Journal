@@ -57,6 +57,7 @@ const projectData = {};
 
 // Callback function to complete GET '/all'
 app.get('/all', (req, res) => {
+    // !!!
     console.log('... app.get : req.body = ' + JSON.stringify(req.body));
     res.send(projectData);
 });
@@ -65,10 +66,12 @@ app.get('/all', (req, res) => {
 app.post('/all', addInfo);
 
 function addInfo(req, res){
+    // !!!
     console.log('... app.post() :: addInfo : req.body = ' + JSON.stringify(req.body));
 
     Object.assign(projectData, req.body);
 
+    // !!!
     console.log('... app.post() :: addInfo : projectData = ' + JSON.stringify(projectData));
 
     res.send(projectData);
