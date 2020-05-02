@@ -1,9 +1,18 @@
+
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
 /* * {
     border: 1px solid red;
 } */
 
-@import url("https://fonts.googleapis.com/css?family=Oswald");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+input:invalid:required {
+    border: 2px solid red;
+}
+
+input:valid {
+    border: 1px solid black;
+}
 
 .container {
     display: grid;
@@ -44,14 +53,22 @@
     grid-area: output;
     background-color: #9BC53D;
     border-radius: 5px;
-    /* padding-top: 10px; */
 }
 
-#intro {
+#intro, #city {
     margin: 0px 0px;
-    padding: 13px 9px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 0px;
+    padding-left: 9px;
     font-family: Oswald;
     font-size: 20px;    
+}
+
+#errMsg {
+    padding-left: 15px;
+    font-family: Raleway;
+    color: red;
 }
 
 label {
@@ -67,4 +84,5 @@ textarea {
 input[type='text'] {
     font-family: Raleway;
     font-size: 15px;
+    size: "10";
 }
