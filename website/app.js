@@ -66,7 +66,7 @@ const getWeatherByZip = async (url, zipCode) => {
             document.getElementById('temp').innerHTML = "";
             document.getElementById('city').innerHTML = "";
             document.getElementById('content').innerHTML = "";          
-            document.getElementById('intro').innerHTML = `${zipCode} is not a valid zip code.`;
+            document.getElementById('intro').innerHTML = `No data available for ${zipCode}.`;
         };
 
         return weatherData;
